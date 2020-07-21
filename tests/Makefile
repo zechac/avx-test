@@ -2,7 +2,7 @@
 # If on x86 platform, use "make ARCH=x86"
 ARCH = aarch64
 CXX = g++
-ARCH_CFLAGS = -march=armv8-a+fp+simd+crc
+ARCH_CFLAGS = -march=knl
 
 ifeq ($(ARCH), x86)
 	CXX = aarch64-linux-gnu-g++
